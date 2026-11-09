@@ -30,6 +30,10 @@ app.post("/series", (req, res) => {
   res.json(["Gossip Girl", "THe Vampire Diares", "Harry Potter"]);
 });
 
+app.get("/erro", (req, res) => {
+  throw new Error("Bug simulado em produção!");
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
