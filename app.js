@@ -19,6 +19,13 @@ app.get("/tico", (req, res) => {
   res.send("teco");
 });
 
+app.get("/pokemons", (req, res) => {
+  res.json([
+    "Caterpie", "Pidgeotto", "Bulbasaur", "Krabby", "Primeape",
+    "Muk", "Tauros", "Lapras", "Snorlax", "Heracross"
+  ]);
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
